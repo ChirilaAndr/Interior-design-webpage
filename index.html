@@ -1,0 +1,215 @@
+<html>
+	<head>
+		<title>Template W3</title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/style.css"> 
+		<link rel="stylesheet" href="./css/grid.css"> 
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+	</head>
+	
+	<body>
+	
+	<!--- Left Menu ---> 
+	
+		<div class="nav-bar float-left red-background" id="menu">
+			<div class="nav-container">
+				<h1 class="nav-text-title">Company<br>Name</h1>
+			</div>
+			<div class="nav-container">
+				<a href="#Home" class="nav-text"> Home </a>
+				<a href="#Showcase" class="nav-text"> Showcase </a>
+				<a href="#Services" class="nav-text"> Services </a>
+				<a href="#Designers" class="nav-text"> Designers </a>
+				<a href="#Packages" class="nav-text"> Packages </a>
+				<a href="#Contact" class="nav-text"> Contact </a>
+			</div>
+		</div>
+	
+	<!--- Main Content Div ---> 
+		
+		<div class="float-left" id="Home">
+		
+		<!--Small Header-->
+	
+			<div class="xs-header red-background">
+				<button class="xs-nav-text" onclick="openMenu()" id="hamburger-icon">☰</button>
+				<h1 class="xs-nav-text inline"> Company Name </h1>
+			
+			</div>
+			
+			<!--- Main Content Div ---> 
+			
+			<div class="main-content-container">
+					
+				<!--- Title & Showcase ---> 
+		
+				<div class="section-container">
+					<h1 class="title-text"> Interior Design </h1>
+					<h2 class="title-text" id="Showcase"> Showcase. </h2> 	
+					<hr class="line">
+				</div>
+				
+				<!--- Showcase Images ---> 
+				
+				
+				<div class="row">
+					<img src="./img/kitchenconcrete.jpg" alt="Kitchen" class="imgs col-xs-12 col-sm-6" onClick="expandPhoto(this)"> 
+					<img src="./img/atrium.jpg" alt="atrium" class="imgs col-xs-12 col-sm-6" onClick="expandPhoto(this)"> 
+				</div>
+				<div class="row">
+					<img src="./img/livingroom.jpg" alt="Livingroom" class="imgs col-xs-12 col-sm-6" onClick="expandPhoto(this)"> 
+					<img src="./img/bedroom.jpg" alt="bedroom" class="imgs col-xs-12 col-sm-6" onClick="expandPhoto(this)"> 
+				</div>
+				<div class="row">
+					<img src="./img/diningroom.jpg" alt="Diningroom" class="imgs col-xs-12 col-sm-6" onClick="expandPhoto(this)"> 
+					<img src="./img/livingroom2.jpg" alt="livingroom2" class="imgs col-xs-12 col-sm-6" onClick="expandPhoto(this)"> 
+				</div>
+
+				<!-- Modal for full size images on click-->
+				
+				<div id="modal" onClick="closePhoto(this)" class="expanded-photo-modal">
+					<button class="close-modal-button">X</button>
+					<div class="modal-image-container">
+						<img id="image" class="modal-image">
+						<p id="caption">dsa</p>
+					</div>
+				</div>
+
+				<!--- Services---> 
+				
+				<div class="section-container">
+					<h2 class="title-text" id="Services"> Services. </h2> 
+					<hr  class="line">
+					<p class="description-paragraph"> We are a interior design service that focus on what's best for your home and what's best for you! </p>
+					<p class="description-paragraph"> Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		
+				</div>
+					
+				<!--- Designers--->  
+				
+				
+				<div class="section-container">
+					<h2 class="title-text" id="Designers"> Designers. </h2> 
+					<hr class="line">
+					<p class="description-paragraph"> The best team in the world. </p>
+					<p class="description-paragraph"> We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<p class="description-paragraph"> <strong> Our designers are thoughtfully chosen </strong> </p>  
+				</div>
+					
+					<!--- Designers Photos & Description ---> 
+					
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<img src="./img/team1.jpg" alt="team1" class="width100">
+						<div class="lightgrey-background person-details">
+							<h3 class="person-description"> <b> John Doe </b> </h3> 
+							<h4 class="person-description"> CEO & Founder </h4>
+							<p class="person-description"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. </p>
+						</div> 
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<img src="./img/team2.jpg" alt="team2" class="width100">
+						<div class="lightgrey-background person-details">
+							<h3 class="person-description"> <b> John Doe </b> </h3> 
+							<h4 class="person-description"> CEO & Founder </h4>
+							<p class="person-description"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. </p>
+						</div> 
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<img src="./img/team3.jpg" alt="team3" class="width100">
+						<div class="lightgrey-background person-details">
+							<h3 class="person-description"> <b> John Doe </b> </h3> 
+							<h4 class="person-description"> CEO & Founder </h4>
+							<p class="person-description"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. </p>
+						</div> 
+					</div>
+				</div>
+				
+				
+				<!--- Packages ---> 
+				
+				<div class="section-container">
+					<h2 class="title-text" id="Packages"> Packages. </h2> 
+					<hr class="line">
+					<p class="description-paragraph"> Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+					</p>
+				</div>
+				
+					<!--- Payment Plans ---> 
+					
+				<div class="row">
+					<div class="payment-plan-container col-xs-12 col-sm-6">
+						<ul> 
+							<li class="payment-plan-name grey-background"> Basic </li> 
+							<li class="payment-plan-detail"> Floorplanning </li> 
+							<li class="payment-plan-detail"> 10 hours support </li> 
+							<li class="payment-plan-detail"> Photography </li> 
+							<li class="payment-plan-detail"> 20% furniture discount </li> 
+							<li class="payment-plan-detail"> Good deals </li> 
+							<li class="payment-plan-detail">  
+								<h2 class="plan-price"> $ 199 </h2> 
+								<p class="grey-text"> per room </p> 
+							</li> 
+							<li class="payment-plan-detail"> <button class="white-background signup-button"> Sign Up </button> </li> 
+						</ul>
+					</div>
+					<div class="payment-plan-container col-xs-12 col-sm-6">
+						<ul> 
+							<li class="payment-plan-name red-background"> Pro </li> 
+							<li class="payment-plan-detail"> Floorplanning </li> 
+							<li class="payment-plan-detail"> 50 hours support </li> 
+							<li class="payment-plan-detail"> Photography </li> 
+							<li class="payment-plan-detail"> 50% furniture discount </li> 
+							<li class="payment-plan-detail"> Good deals </li> 
+							<li class="payment-plan-detail">  
+								<h2 class="plan-price"> $ 249 </h2> 
+								<p class="grey-text"> per room </p> 
+							</li> 
+							<li class="payment-plan-detail"> <button class="red-background signup-button" style="color:white" > Sign Up </button>  </li> 
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+				<!--- Contact ---> 
+				
+				<div class="section-container">
+					<h2 class="title-text" id="Contact"> Contact. </h2> 
+					<hr class="line">
+					<p class="description-paragraph"> Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!	</p>
+				</div>
+				
+					<!--- Form ---> 
+				
+				<div>
+					<form class="contact-form">
+						<label for="name">Name</label>
+						<input type="text" id="fname" name="fname" required>
+						<label for="email">Email</label>
+						<input type="text" id="lname" name="lname" required>
+						<label for="message">Message</label>
+						<input type="text" id="message" name="message">
+						<input type="button" value="Send Message">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!--- Footer ---> 	
+		
+		<div class="Footer float-left">
+			<p class="footer-text"> Powered By Andrei Chirila </p>
+		</div>
+			
+		<script src="./js/javascript.js"> </script> 
+
+	</body>
+	

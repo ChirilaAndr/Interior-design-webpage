@@ -1,0 +1,416 @@
+:root{
+	--red: #f44336;
+	--grey: #616161;
+	--light-grey: #f1f1f1;
+	--white: white;
+	--black: black;
+} 
+
+
+/* -----------------
+   Table of contents
+   -----------------
+
+   	1. General Classes
+   	2. Page elements
+		2.1 Left menu
+		2.2 Main content Div
+		2.3 Title & showcase
+			2.3.1 Expanded Photo
+		2.4 Designers
+		2.5 Payment Plans
+		2.6 Contact
+		2.7 Footer
+	3. Mobile
+		3.1 General Clases
+		3.2 Small Screen Menu
+
+
+/* ========================================
+   General classes (used on the whole page)
+   ======================================== */ 
+
+body{
+	font-family: Poppins, sans-serif;
+	line-height: 1.5;
+}
+
+   .float-left{
+	float:left;
+}
+
+.clear-both{
+	clear: both;
+}
+
+.line{
+	border-radius: 5px;
+	margin: 20px 0; 
+	width:50px;
+	height: 0px;
+	border:5px solid var(--red);
+}
+
+h1.title-text{
+	padding: 0;
+	color: var(--black);
+	font-size: 64px;
+	font-weight: bolder;
+	margin: 10px 0;
+	font-family: Poppins, sans-serif;
+	line-height: 1.5;
+	
+}
+
+h2.title-text{
+	padding: 0;
+	color: var(--red);
+	font-size: 48px;
+	font-weight: bolder;
+	margin: 10px 0;
+	position:relative;	
+	font-family: Poppins, sans-serif;
+	line-height: 1.5;	
+}
+
+.red-background{
+	background-color: var(--red);
+}
+
+.grey-background{
+	background-color: var(--grey);
+}
+
+.white-background{
+	background-color:var(--white);
+}
+
+.lightgrey-background{
+	background-color: var(--light-grey);
+}
+
+.width100{
+	width:100%;
+}
+
+.grey-text{
+	color:var(--grey);
+}
+
+.description-paragraph{
+	margin-top:10px;
+}
+
+strong{
+	font-weight: bold;
+}
+
+.inline{
+	display: inline;
+}
+
+.section-container{
+	padding: 64px 16px 0 16px;
+}
+
+/* =======================
+        Page elements
+   ======================= */
+
+/* ---------
+   Left Menu
+   --------- */
+
+.nav-bar{
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: 300px;
+	z-index: 3;
+}
+
+.nav-container{
+	padding: 8px 16px; 
+}
+
+.nav-text-title{ 
+	font-size: 24px;
+	padding: 80px 16px 64px 16px;
+	color:var(--white);
+	font-weight: bold;
+}
+
+.nav-text{
+	color:var(--white);
+	font-size:18px;
+	font-weight: bold;
+	padding: 8px 16px; 
+	margin:auto;
+	display: block;
+}
+
+.nav-text:hover{
+	background-color: var(--white);
+	color: var(--black);
+	cursor: pointer;
+}
+
+/* ----------------
+   Main Content Div
+   ---------------- */
+
+.main-content-container{ 
+	margin-left: 340px;
+	margin-right: 40px;
+} 
+
+/* ----------------
+   Title & Showcase
+   ---------------- */
+
+.imgs{
+	padding: 8px;
+	opacity: 0.8;
+}
+
+.imgs:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* --------------
+   Expanded Photo
+   -------------- */
+
+.expanded-photo-modal{
+	display: none;
+	background: var(--black);
+	height:100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+
+.close-modal-button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 36px;
+	color: var(--white);
+	padding: 8px 16px;
+	background: var(--black);
+	border:0;
+}
+
+.close-modal-button:hover{
+	background: var(--light-grey);
+	color: var(--black);
+}
+
+.modal-image-container{
+	margin: auto;
+	padding: 100px 0;
+	text-align: center;
+
+}
+
+
+.modal-image{
+	max-width:100%;
+	height: auto;
+}
+
+#caption{
+	color: var(--white);
+	margin-top: 20px;
+}
+
+
+/* ---------
+   Designers
+   --------- */
+
+.person{
+	width:33%;
+	padding: 10px;
+}
+
+.person-details{
+	padding: 16px;
+	font-size: 16px;
+}
+
+h3.person-description{
+	font-size: 24px;
+}
+
+h4.person-description{
+	font-size: 16px;
+	color: var(--grey);
+	margin: 8px 0 8px 0;
+}
+
+/* -------------
+   Payment Plans
+   ------------- */
+
+.payment-plan-container{
+	width: 50%;
+	padding: 10px;
+}
+
+.payment-plan-detail{
+	padding: 16px 16px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	background-color: var(--light-grey);
+}
+
+.payment-plan-name{
+	text-align: center;
+	color: var(--white);
+	padding-top: 32px;
+	padding-bottom: 32px;
+	font-size:24px;
+}
+
+.plan-price{
+	font-size:32px;
+	font-weight: normal;
+}
+	
+.signup-button{
+	padding: 12px 24px;
+	width:auto;
+	display: inline-block;
+	border:none;
+	font-size:16px;
+} 
+
+.signup-button:hover{
+	background-color: var(--black);
+	color: var(--white);
+	cursor:pointer;
+}
+
+
+
+
+/* -------
+   Contact 
+   ------- */ 
+
+input[type=text] {
+  width: 100%;
+  padding: 8px 2px;
+  margin: 0 0 8px 0;
+  box-sizing: border-box;
+  font-size:16px;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type=button]{
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-size:16px;
+  width: 100%;
+  margin-bottom:16px;
+  margin-top: 16px;
+}
+
+input[type=button]:hover{
+	background-color: var(--light-grey);
+	cursor:pointer;
+	color:var(--black);
+}
+
+.contact-form{
+	padding: 16px 16px 0 16px;
+	font-family: "Poppins", sans-serif;
+	line-height: 1.5;
+}
+
+label{
+	padding-bottom: 2px;
+}
+
+/* ------
+   Footer
+   ------ */
+
+.footer{
+	margin-top: 75px;
+	padding: 32px 58px 32px 16px;
+	background-color: var(--light-grey);
+	width:100%;
+	text-align:right;
+	font-size:16px;
+	font-family: "Poppins", sans-serif;
+	line-height: 1.5;
+}
+
+
+
+/* ================
+        Mobile
+   ================ */
+
+/* ---------------
+   General classes
+   --------------- */
+
+@media only screen and (max-width: 768px) {
+	
+	.nav-bar{ 
+		display:none;
+		height:auto;
+		} 
+
+
+	.nav-text-title{
+		display:none;
+	}	
+
+	.main-content-container{
+		margin-top: 30px;
+		margin-left: 40px;
+	}
+
+	.main-content{
+		margin-left:40px;
+	}
+}	
+
+/* -----------------
+   Small Screen Menu
+   ----------------- */
+
+.xs-header{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	padding: 8px 20px;
+	font-weight: bold;
+}
+
+.xs-nav-text{
+	color: var(--white);
+	font-size:24px;
+	padding: 8px 16px;
+	border: 0;
+	background: transparent;
+}
+
+.xs-header button{
+	cursor: pointer;
+}
